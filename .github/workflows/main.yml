@@ -5,7 +5,7 @@
 #
 #luck7454@gmail.com
 #---------------------------------------------------------------------
-name: My-GitHubActions-Basics
+name: GitHubActions-GL
 
 on: 
   push:
@@ -13,18 +13,17 @@ on:
       - master
 
 jobs:
-  my_testing:
+  mfirst:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print Hello Message in Testing
-      run : echo "Hello World from Testing job"
+    - name: Print name of job
+      run : echo "mfirst"
     
-  
-  my_deploy:
+  msecond:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Print Hello Message in Deploy
-      run : echo "Hello World from Deploy job"
+    - name: Print Deploy
+      run : echo "Deploy"
     
