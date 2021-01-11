@@ -10,7 +10,7 @@ name: GitHubActions-GL
 on: 
   push:
     branches: 
-      - master
+      - main
 
 jobs:
   mfirst:
