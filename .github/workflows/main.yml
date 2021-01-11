@@ -5,7 +5,7 @@
 #
 #luck7454@gmail.com
 #---------------------------------------------------------------------
-name: GitHubActions-Globallogic
+name: My-GitHubActions-Basics
 env:
   APPLICATION_NAME    : "MyFlask"
   DEPLOY_PACKAGE_NAME : "flask-deploy-ver-${{ github.sha }}"
@@ -21,12 +21,12 @@ jobs:
 
     steps:
     - name: Print Hello Message in Testing
-      run : echo "best job in the world"
+      run : echo "Hello World from Testing job"
     
     - name: Execure few commands
       run : |
-        echo "first"
-        echo "second"
+        echo "Hello Message1"
+        echo "Hello Message2"
         echo "Appication name: ${{ env.APPLICATION_NAME }}"
     
     - name: List current folder
@@ -47,7 +47,7 @@ jobs:
     
     steps:
     - name: Print Hello Message in Deploy
-      run : echo "best deploy job in the world"
+      run : echo "Hello World from Deploy job"
       
     - name: Print env vars
       run : |
